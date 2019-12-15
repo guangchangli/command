@@ -1,17 +1,4 @@
-# mac
-
-​	
-
-```
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias del='rm -f'
-alias cc='clear'
-alias bp='vim ~/.bash_profile'
-```
-
-​	
+# mac	
 
 - 刷新dns
 
@@ -89,14 +76,6 @@ alias bp='vim ~/.bash_profile'
   N    跳转到上次
   ```
 
-- github
-
-  ```
-  s 搜索
-  i:name 
-  
-  ```
-
 - 文件查找
 
   ```
@@ -111,6 +90,13 @@ alias bp='vim ~/.bash_profile'
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
   
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  ```
+  
 
+  coding 
+  $ cd "$(brew --repo)" && git remote set-url origin https://git.coding.net/homebrew/homebrew.git
+  
+  $ cd $home && brew update 
+  五分钟一次刷新
+  ```
+  
   
