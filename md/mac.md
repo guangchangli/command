@@ -99,4 +99,75 @@
   五分钟一次刷新
   ```
   
+- Bash_profile
+
+  ```
+  # jdk相关配置
+  export JAVA_8_HOME="$(/usr/libexec/java_home -v 1.8)"
+  export JAVA_13_HOME="$(/usr/libexec/java_home -v 13)"
+  alias jdk8='export JAVA_HOME=$JAVA_8_HOME'
+  alias jdk13='export JAVA_HOME=$JAVA_13_HOME'
+  export JAVA_HOME=$JAVA_8_HOME
+  
+  # maven
+  export M2_HOME=/usr/local/apache-maven-3.6.3
+  export PATH=${PATH}:${M2_HOME}/bin
+  export JAVA_HOME=$JAVA_8_HOME
+  
+  # mysql
+  PATH=$PATH:/usr/local/mysql/bin
+  
+  PATH=/bin:/usr/bin:/usr/local/bin:${PATH} 
+  export PATH
+  ```
+
+- Mvn settings
+
+  ```
+  <?xml version="1.0" encoding="UTF-8"?>
+  
+  <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  
+      <localRepository>/usr/local/repo</localRepository>
+  
+    <pluginGroups>
+  
+    </pluginGroups>
+  
+  
+    <proxies>
+  
+    </proxies>
+  
+  
+    <servers>
+  
+      <server>
+        <id>nexus-server</id>
+        <username>admin</username>
+        <password>admin123</password>
+      </server>
+    </servers>
+  
+    
+    <mirrors>
+      
+      <mirror>  
+    		<id>alimaven</id>  
+    		<name>aliyun maven</name>  
+    		<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+    		<mirrorOf>central</mirrorOf>          
+  	</mirror>
+    </mirrors>
+  
+    
+    <profiles>
+      
+    </profiles>
+  
+  </settings>
+  ```
+
   

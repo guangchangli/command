@@ -1,14 +1,65 @@
 ## git
 
-1. #### 查看分支
+1. #### 分支
+
+   ##### 本地分支
 
    ```
-   本地分支 git branch
-   远程分支 git branch -a
-   全部分支 git branch -ar
+   git branch
    ```
 
-2. 查看log
+   ##### 远程分支
+
+   ```
+   git branch -r  remote
+   ```
+
+   ##### 全部分支
+
+   ```
+   git branch -a  all 
+   ```
+
+   ##### 远程分支和本地分支对应关系
+
+   ```
+   git remote show origin
+   ```
+
+   ##### 本地分支关联远程分支情况
+
+   ```
+   git branch -vv
+   ```
+
+   ##### 创建并切换到分支
+
+   ```
+   git checkout -b <branch-name>
+   ```
+
+   ##### 删除本地分支
+
+   ```
+   git branch -d <local-branchname>
+   ```
+
+   ##### 删除远程分支
+
+   ```
+   git push origin --delete <remote-branchname>
+   git push origin :<remote-branchname>
+   ```
+
+   ##### 重命名分支
+
+   ```
+   git branch -m <new-branch-name>
+   ```
+
+   
+
+2. #### 查看log
 
    ```
    显示【最近 n 次】每次提交差异 git log -p 【-n】
@@ -36,9 +87,28 @@
    取消暂存 git reset HEAD fileName 
    ```
 
+4. #### 工作区
+
+   ##### 放弃工作区修改
+
+   ```
+   git checkout <file-name>
+   git checkout . 放弃所有
+   ```
+
+   ##### 工作区和暂存区的区别
+
+   ```
+   git diff
+   ```
+
+   ##### Commit 之间的区别
+
+   ```
+   git diff <commit-id> <commit-id>
+   ```
+
    
-
-
 
 
 
