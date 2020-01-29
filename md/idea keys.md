@@ -6,5 +6,11 @@
   command shift -/=
   ```
 
+- 大小写切换
+
+  ```
+  command shift u
+  ```
+
   
 
