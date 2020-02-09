@@ -32,4 +32,17 @@
    curl --trace-ascii output.txt url
    ```
 
+6. get
+
+   ```
+   curl url?params  多个get url 直接写
+   ```
+
+7. post
+
+   ```
+   curl -H "Accept: application/json" -H "Content-type: application/json"
+   -X POST -d '${param}' interfaceURl
+   ```
+
    

@@ -125,49 +125,47 @@
 
   ```
   <?xml version="1.0" encoding="UTF-8"?>
-  
   <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-  
       <localRepository>/usr/local/repo</localRepository>
-  
     <pluginGroups>
-  
     </pluginGroups>
-  
-  
     <proxies>
-  
     </proxies>
-  
-  
     <servers>
-  
       <server>
         <id>nexus-server</id>
         <username>admin</username>
         <password>admin123</password>
       </server>
     </servers>
-  
-    
     <mirrors>
-      
       <mirror>  
     		<id>alimaven</id>  
     		<name>aliyun maven</name>  
-    		<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
     		<mirrorOf>central</mirrorOf>          
   	</mirror>
     </mirrors>
-  
-    
     <profiles>
-      
     </profiles>
-  
   </settings>
+  ```
+  
+- iterm2
+
+  ```
+  跳转
+  ctrl a 行首
+  ctrl e 行尾
+  command k/r 清屏 ctrl l
+  ctrl u 清楚当前行
+  从光标处删到行首/尾 ctrl w/k
+  command alt / 最近打开记录
+  command option 矩形选中
+  command shift h 打开最近记录
+  command shift B 时间轴
   ```
 
   
+
