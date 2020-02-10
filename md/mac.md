@@ -164,8 +164,59 @@
   command alt / 最近打开记录
   command option 矩形选中
   command shift h 打开最近记录
-  command shift B 时间轴
+  command shift B 时间
+  ```
+
+- 权限
+
+  ```
+  文件类型 主权限（user） 组权限(gtroup) 其他权限(other)
+  ```
+
+  ###### 文件类型
+
+  ```
+  d 目录
+  - 文件
+  l 链接
+  b 表示为装置文件里面的可供存储的接口设备 可随机存取装置
+  c 表示为装置文件里面的串行端口设备
+  ```
+
+  修改权限
+
+  ```
+  chmod u=rwx,g=rwx,o=r file.txt
+  ```
+
+  查看组
+
+  ```
+  cat /etc/passwd     #可以查看所有用户的列表
+  w                   #可以查看当前活跃的用户列表
+  
+  cat /etc/group      #查看用户组
+  groups   #查看当前登录用户的组内成员
+  groups   #test 查看test用户所在的组，以及组内成员
+  whoami   #查看当前登录用户名
+  ```
+
+  删除账号
+
+  ```
+  userdel [-r] 用户名 -r 删除用户目录
+  ```
+
+  修改账号
+
+  ```
+  usermod [] 用户名
+  ```
+
+  为用户赋予权限
+
+  ```
+  
   ```
 
   
-
