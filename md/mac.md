@@ -213,10 +213,29 @@
   usermod [] 用户名
   ```
 
-  为用户赋予权限
+  赋予权限（u、g、o）
 
   ```
+  chmod ugo+r a.sh 或 chmod a+r  a.conf 		   所有用户读权限
+  chmod a+r,ug+w,o-w a.conf b.xml       	    当前用户和所在组可读写，其他只能读
+chmod -R a+rw *															当前目录以及子目录所有用户可读写
+  ```
   
+- #### brew
+
+  ```
+  brew list 
+  brew outdated   查询可以更新的包
+  brew upgrade    更新所有包
+  brew upgrade x  更新指定包
+  brew cleanup    清理所有包的旧版本
+  brew cleanup x  清理指定
+  brew uninstall formula_name --force 卸载包
+  brew pin $FORMULA       锁定某个包
+  brew unpin $FORMULA     取消锁定
+  brew info $FORMULA      显示某个包的信息
+  brew info               显示安装了包数量，文件数量，和总占用空间
+  brew deps --installed --tree  查看已安装的包的依赖，树形显示
   ```
 
   
