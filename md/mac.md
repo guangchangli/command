@@ -221,7 +221,7 @@
 chmod -R a+rw *															当前目录以及子目录所有用户可读写
   ```
   
-- #### brew
+- Brew
 
   ```
   brew list 
