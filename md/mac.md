@@ -84,21 +84,6 @@
   mdfind -onlyin path str 路径下所有
   ```
 
-- homebrew
-
-  ```
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
-  
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  
-
-  coding 
-  $ cd "$(brew --repo)" && git remote set-url origin https://git.coding.net/homebrew/homebrew.git
-  
-  $ cd $home && brew update 
-  五分钟一次刷新
-  ```
-  
 - Bash_profile
 
   ```
@@ -221,21 +206,5 @@
 chmod -R a+rw *															当前目录以及子目录所有用户可读写
   ```
   
-- Brew
-
-  ```
-  brew list 
-  brew outdated   查询可以更新的包
-  brew upgrade    更新所有包
-  brew upgrade x  更新指定包
-  brew cleanup    清理所有包的旧版本
-  brew cleanup x  清理指定
-  brew uninstall formula_name --force 卸载包
-  brew pin $FORMULA       锁定某个包
-  brew unpin $FORMULA     取消锁定
-  brew info $FORMULA      显示某个包的信息
-  brew info               显示安装了包数量，文件数量，和总占用空间
-  brew deps --installed --tree  查看已安装的包的依赖，树形显示
-  ```
-
+  
   
