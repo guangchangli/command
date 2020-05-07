@@ -3,12 +3,16 @@
 1. Brew 安装 
 
    ```
-   brew install mongodb@4.0
+   brew install mongodb-community@4.0
    brew cask install mongodb-comprass
    // 启动
    brew services start mongodb-community@4.0
    // 关闭
    brew services stop mongodb-community@4.0
+   export PATH="$PATH:/usr/local/Cellar/mongodb-community@4.0/4.0.18/bin"
+   配置文件
+   /usr/local/etc/mongod.conf
+   mongo
    ```
 
 2. 基本操作
