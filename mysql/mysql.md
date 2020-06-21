@@ -83,6 +83,7 @@ ALTER TABLE `tableName` ADD COLUMN `columnName` varchar(255) NOT NULL DEFAULT '0
 alter table `tableName` drop `columnName`
 修改字段类型
 ALTER TABLE `tableName` MODIFY `columnName` VARCHAR(50);
+alter table `tableName` change `columnName` `newColumnName` 。。。
 修改字段名
 ALTER TABLE `tableName` CHANGE `columnName` `newColumnName` VARCHAR(50);
 修改表名
