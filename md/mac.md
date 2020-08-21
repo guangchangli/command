@@ -17,6 +17,7 @@
 
   ```
   lsof -i tcp:8080 
+  sudo lsof -i -P | grep -i "listen"
   ```
 
   ```
@@ -34,6 +35,7 @@
   ```
   df [-g] 文件系统使用
   du  当前文件
+  df -h
   ```
 
 - Vim 跳转

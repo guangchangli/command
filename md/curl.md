@@ -42,7 +42,7 @@
 
    ```
    curl -H "Accept: application/json" -H "Content-type: application/json"
-   -X POST -d '${param}' interfaceURl
+   -X POST -d '{"xx":"xx"}' interfaceURl
    ```
 
    
