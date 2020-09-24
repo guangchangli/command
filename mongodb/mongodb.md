@@ -12,7 +12,7 @@
    export PATH="$PATH:/usr/local/Cellar/mongodb-community@4.0/4.0.18/bin"
    配置文件
    /usr/local/etc/mongod.conf
-   mongo
+   mongo user_name
    ```
 
 2. 基本操作
